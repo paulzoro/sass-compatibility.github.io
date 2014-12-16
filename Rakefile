@@ -158,6 +158,7 @@ class String
       .gsub(/ *\{/, " {\n")
       .gsub(/([;,]) */, "\\1\n")
       .gsub(/ *\} */, " }\n")
+      .gsub(/(\d+)\.(\d{2})\d+/, '\1.\2')
       .strip
   end
 end
