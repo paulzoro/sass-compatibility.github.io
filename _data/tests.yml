@@ -12,6 +12,7 @@ at_root_directive:
   - tests/at_root_directive/extend
   - tests/at_root_directive/keyframes
   - tests/at_root_directive/media
+  - tests/at_root_directive/with_without
 # Switch to those tests once they are merged in sass-spec
 # - tests/libsass/at-root/ampersand
 # - tests/libsass/at-root/basic
@@ -19,6 +20,7 @@ at_root_directive:
 # - tests/libsass/at-root/extend
 # - tests/libsass/at-root/keyframes
 # - tests/libsass/at-root/media
+# - tests/libsass/at-root/with_without
 
 call_function:
   - spec/basic/60_call
@@ -62,7 +64,12 @@ map_data_type:
   - spec/maps/map-values
 
 media_merge:
-  - spec/libsass-todo-issues/issue_185
+  - spec/libsass-todo-issues/issue_185/hoisting
+  - spec/libsass-todo-issues/issue_185/media_level_4
+  - spec/libsass-todo-issues/issue_185/media_wrapper_selector
+  - spec/libsass-todo-issues/issue_185/merge_no_repeat
+  - spec/libsass-todo-issues/issue_185/mixin
+  - spec/libsass-todo-issues/issue_185/selector_wrapper_media
 
 multi_assign_each:
   - spec/libsass-closed-issues/issue_492
@@ -77,9 +84,7 @@ nested_interpolations:
   - spec/libsass-todo-issues/issue_615
 
 not_operator:
-  - spec/libsass-todo-tests/basic/44_not_number_expression
-# Add this test once it is merged in sass-spec
-#  - spec/libsass-todo-issues/issue_680
+  - spec/libsass-closed-issues/issue_748
 
 random_function:
   - spec/libsass-closed-issues/issue_657/limit
@@ -105,8 +110,9 @@ set_nth_function:
   - spec/libsass-closed-issues/issue_578
 
 spaces_minus:
-  - tests/spaces_minus
-# - spec/libsass/spaces-minus
+  - spec/libsass-todo-tests/spaces-minus
+# Switch to this test once it is merged in sass-spec
+#  - spec/libsass-closed-issues/issue_733
 
 string_manipulation_functions:
   - spec/basic/43_str_length
