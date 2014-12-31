@@ -278,24 +278,6 @@
 
 
 
-- label: "`not` operator"
-  name: not_operator
-  description: |
-    The `not` operator is meant to indicate the opposite of something.
-    Think of it as `!` in JavaScript or other languages.
-    For instance, `not true` is `false`.
-  polyfill: |
-    Depending on the context, you might be able to use `== false` or `== null` instead.
-
-    <pre class="language-scss"><code>// Instead of:
-    // @if not index($list, $value) { .. }
-
-    @if index($list, $value) == null { .. }</code></pre>
-
-
-
-
-
 - label: "`random` function"
   name: random_function
   description: |

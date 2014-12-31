@@ -6,21 +6,13 @@ angle_conversion:
   - spec/libsass-closed-issues/issue_666/angle
 
 at_root_directive:
-  - tests/at_root_directive/ampersand
-  - tests/at_root_directive/basic
-  - tests/at_root_directive/nested
-  - tests/at_root_directive/extend
-  - tests/at_root_directive/keyframes
-  - tests/at_root_directive/media
-  - tests/at_root_directive/with_without
-# Switch to those tests once they are merged in sass-spec
-# - tests/libsass/at-root/ampersand
-# - tests/libsass/at-root/basic
-# - tests/libsass/at-root/nested
-# - tests/libsass/at-root/extend
-# - tests/libsass/at-root/keyframes
-# - tests/libsass/at-root/media
-# - tests/libsass/at-root/with_without
+  - spec/libsass-todo-tests/at-root/ampersand
+  - spec/libsass-todo-tests/at-root/basic
+  - spec/libsass-todo-tests/at-root/nested
+  - spec/libsass-todo-tests/at-root/extend
+  - spec/libsass-todo-tests/at-root/keyframes
+  - spec/libsass-todo-tests/at-root/media
+  - spec/libsass-todo-tests/at-root/with_without
 
 call_function:
   - spec/basic/60_call
@@ -82,9 +74,6 @@ negative_indexes:
 
 nested_interpolations:
   - spec/libsass-todo-issues/issue_615
-
-not_operator:
-  - spec/libsass-closed-issues/issue_748
 
 random_function:
   - spec/libsass-closed-issues/issue_657/limit
